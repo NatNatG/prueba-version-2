@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
-    public SceneControl Opciones;
     public void CambiarAEscena(int numeroEscena)
     {
         SceneManager.LoadScene(numeroEscena);
