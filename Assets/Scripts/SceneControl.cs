@@ -15,4 +15,5 @@ public class SceneControl : MonoBehaviour
     {
         SceneManager.LoadScene(numeroEscena);
     }
+
 }
