@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
+    public SceneControl Opciones;
     public void CambiarAEscena(int numeroEscena)
     {
         SceneManager.LoadScene(numeroEscena);
@@ -15,5 +16,13 @@ public class SceneControl : MonoBehaviour
     {
         SceneManager.LoadScene(numeroEscena);
     }
+
+    /*void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Opciones.gameObject.SetActive(true);
+        }
+    }*/
 
 }
