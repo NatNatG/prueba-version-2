@@ -42,6 +42,9 @@ public class Disparador : MonoBehaviour
                 copiaDisparo.transform.position = muzzle1.position;
                 copiaDisparo.transform.rotation = muzzle1.rotation;
                 copiaDisparo.GetComponent<Rigidbody>().velocity = transform.parent.forward * velocidadDisparo;
+
+                //SFX
+                AudioManager.instancia.PlaySFX(0);
             }
         }
 
