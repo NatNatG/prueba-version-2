@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1826461041884994662}
   m_Layer: 0
   m_Name: rasho
-  m_TagString: Untagged
+  m_TagString: PlayerLaser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

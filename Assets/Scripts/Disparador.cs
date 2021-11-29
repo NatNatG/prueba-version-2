@@ -45,6 +45,8 @@ public class Disparador : MonoBehaviour
 
         
     }
+
+
     /*if (Input.GetButtonDown("LB"))
     {
         int nuevaArma = (armaSeleccionada - 1) < 0 ? Armas.Count - 1 ? : armaSeleccionada - 1;

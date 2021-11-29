@@ -6,6 +6,8 @@ TagManager:
   tags:
   - llave1
   - exit
+  - PlayerLaser
+  - enemy
   layers:
   - Default
   - TransparentFX
