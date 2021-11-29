@@ -36,8 +36,8 @@ public class ControlDisparo : MonoBehaviour
         //cuando choque con lo que sea se desactiva
         tiempoContado = 0f;
         gameObject.SetActive(false);
-       
-        
+
+
     }
  
 }

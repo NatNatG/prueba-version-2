@@ -36,6 +36,9 @@ public class Llave : MonoBehaviour
             bloqueado = false; 
             Destroy(other.gameObject);
 
+            //SFX
+            AudioManager.instancia.PlaySFX(1);
+
         }
     }
     public void desbloquear()

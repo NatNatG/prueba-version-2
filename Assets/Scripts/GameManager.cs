@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioManager.instancia.PlayMusic(0, true);
     }
 
     // Update is called once per frame
