@@ -8,12 +8,13 @@ public class Disparador : MonoBehaviour
     public float velocidadDisparo;
 
     private Pooling mPooling;
-
+    private Transform muzzle1;
     // Start is called before the first frame update
     void Start()
     {
         // todas las armas estaran asignadas, pero hay que deshabilitarlas, excepto una
         mPooling = GetComponent<Pooling>();
+        muzzle1 = transform.Find("muzzle1");
 
     }
 
@@ -26,9 +27,19 @@ public class Disparador : MonoBehaviour
 
             if(copiaDisparo)
             {
-                copiaDisparo.transform.position = transform.position + transform.forward;
-                copiaDisparo.transform.rotation = transform.rotation;
-                copiaDisparo.GetComponent<Rigidbody>().AddForce(transform.forward * velocidadDisparo, ForceMode.VelocityChange);
+
+                /*copiaDisparoLeft.transform.position = LeftMuzzle.position;
+                copiaDisparoRight.transform.position = RightMuzzle.position;
+
+                copiaDisparoLeft.transform.rotation = transform.rotation;
+                copiaDisparoRight.transform.rotation = transform.rotation;
+                copiaDisparoLeft.GetComponent<Rigidbody>().velocity = transform.parent.forward * velocidadDisparo;
+                copiaDisparoRight.GetComponent<Rigidbody>().velocity = transform.parent.forward * velocidadDisparo;*/
+
+
+                copiaDisparo.transform.position = muzzle1.position;
+                copiaDisparo.transform.rotation = muzzle1.rotation;
+                copiaDisparo.GetComponent<Rigidbody>().velocity = transform.parent.forward * velocidadDisparo;
             }
         }
 
