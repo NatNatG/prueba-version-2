@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ControlDisparo : MonoBehaviour
 {
     public float tiempoParaDesactivar;
     private float tiempoContado;
+    public int puntaje;
+    public Text score; 
 
     // Start is called before the first frame update
     void Start()
     {
         tiempoContado = 0f;
+        score = GameObject.Find("score").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,8 @@ public class ControlDisparo : MonoBehaviour
         {
             tiempoContado += Time.deltaTime;
         }
+
+        //score.text = "puntos: " + puntaje.ToString();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -32,6 +37,9 @@ public class ControlDisparo : MonoBehaviour
         //cuando choque con lo que sea se desactiva
         tiempoContado = 0f;
         gameObject.SetActive(false);
+       
+        
     }
+ 
 }
 

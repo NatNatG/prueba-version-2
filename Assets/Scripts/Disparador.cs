@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class Disparador : MonoBehaviour
 {
@@ -9,12 +9,14 @@ public class Disparador : MonoBehaviour
 
     private Pooling mPooling;
     private Transform muzzle1;
+
     // Start is called before the first frame update
     void Start()
     {
         // todas las armas estaran asignadas, pero hay que deshabilitarlas, excepto una
         mPooling = GetComponent<Pooling>();
         muzzle1 = transform.Find("muzzle1");
+        
 
     }
 
@@ -43,9 +45,12 @@ public class Disparador : MonoBehaviour
             }
         }
 
-        
+       
     }
 
+
+ 
+    
 
     /*if (Input.GetButtonDown("LB"))
     {
