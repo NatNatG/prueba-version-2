@@ -132,8 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LaserPrefab: {fileID: 5734671513561704861, guid: 2a56a10abde95e84eb3d5a20e2f91042, type: 3}
-  LaserMuzzle: {fileID: 0}
-  laserTime: 2
+  laserTime: 1
 --- !u!1101 &2022634901647669836
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
