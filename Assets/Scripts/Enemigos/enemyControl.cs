@@ -31,6 +31,7 @@ public class enemyControl : MonoBehaviour
         {
             DamageBoss(2);
             GameManager.GetInstancia().addScore(20);
+            
 
             //SFX
             AudioManager.instancia.PlaySFX(2);
