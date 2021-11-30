@@ -11,13 +11,13 @@ public class BossControlador : MonoBehaviour
 
     private Slider HPSlider;
 
-    //private Animator BossAnimator;
+    private Animator BossAnimator;
     public GameObject BossHPSlider;
     // Start is called before the first frame update
     private void Start()
     {
 
-        //BossAnimator = GetComponent<Animator>();
+        BossAnimator = GetComponent<Animator>();
         HPSlider = BossHPSlider.GetComponent<Slider>();
 
         HPSlider.value = 1;
@@ -44,7 +44,7 @@ public class BossControlador : MonoBehaviour
     public void DamageBoss(int damage)
     {
         life -= (damage);
-        //BossAnimator.SetTrigger("hit");
+        BossAnimator.SetTrigger("hit");
 
 
         //aqui baja la vida
