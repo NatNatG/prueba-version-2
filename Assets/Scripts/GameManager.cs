@@ -22,8 +22,9 @@ public class GameManager : MonoBehaviour
 
     }
     public int puntaje;
-    public Text score; 
-
+    public Text score;
+    public GameObject final;
+    private bool oculto = true;
     public void addScore(int marcador)
     {
         puntaje += marcador;
@@ -41,21 +42,42 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        final = GameObject.Find("final");
         AudioManager.instancia.PlayMusic(0, true);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         score = GameObject.Find("score").GetComponent<Text>();
-
+        
+       
         if(gameover == true)
         {
+            
             Time.timeScale = 0f;
             AudioManager.instancia.PlayMusic(0, false);
             LockCursor(false);
+            oculto = false;
+            
         }
+
+        if (oculto == true)
+        {
+            //final.isActive(false);
+
+        }
+        else if (oculto == false)
+        {
+            //final.isActive(true);
+            
+        }
+        
     }
+
+
 
     private void LockCursor(bool isLocked)
     {
