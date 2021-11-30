@@ -1560,3 +1560,4 @@ Received Import Request.
 Start importing Assets/Scenes/PantallaInicio.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2dd51be21eb4f70fc66c593e873687') in 0.504398 seconds 
   Import took 0.762682 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
