@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        final = GameObject.Find("final");
+        final = GameObject.Find("final1");
         AudioManager.instancia.PlayMusic(0, true);
         
     }
@@ -66,12 +66,12 @@ public class GameManager : MonoBehaviour
 
         if (oculto == true)
         {
-            //final.isActive(false);
+            final.SetActive(false);
 
         }
         else if (oculto == false)
         {
-            //final.isActive(true);
+            final.SetActive(true);
             
         }
         
