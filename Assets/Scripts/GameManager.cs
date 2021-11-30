@@ -30,6 +30,14 @@ public class GameManager : MonoBehaviour
         score.text = "score: " + puntaje.ToString();
     }
     public bool gameover;
+
+    public void detener()
+    {
+        gameover = true;
+
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,5 +48,28 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         score = GameObject.Find("score").GetComponent<Text>();
+
+        if(gameover == true)
+        {
+            Time.timeScale = 0f;
+            AudioManager.instancia.PlayMusic(0, false);
+            LockCursor(false);
+        }
+    }
+
+    private void LockCursor(bool isLocked)
+    {
+        if (isLocked)
+        {
+            Cursor.visible = false;
+
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.visible = true;
+
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }
