@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: de274ba68e7b6d94a85c32a0fef42529, type: 2}
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.058778383, g: 0.33876598, b: 0.030806404, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -298,7 +298,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cc03d2f4f46b1c34a8c37d3c1e5b7b9f, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc03d2f4f46b1c34a8c37d3c1e5b7b9f, type: 3}
       propertyPath: m_LocalScale.x
@@ -424,7 +424,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 839364412}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &242699019
 ParticleSystemRenderer:
@@ -5336,7 +5336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434969360
 GameObject:
@@ -5558,7 +5558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7593103315750573804, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7593103315750573804, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5914,7 +5914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 100
-  LaserMuzzle: {fileID: 0}
+  LaserMuzzle: {fileID: 1667163179}
   BossHPSlider: {fileID: 927980419}
 --- !u!136 &839364415
 CapsuleCollider:
@@ -6414,20 +6414,6 @@ MonoBehaviour:
   life: 100
   LaserMuzzle: {fileID: 0}
   BossHPSlider: {fileID: 927980419}
---- !u!64 &1380954281
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380954274}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cc03d2f4f46b1c34a8c37d3c1e5b7b9f, type: 3}
 --- !u!1 &1483194687
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,7 +6568,37 @@ Transform:
   - {fileID: 563345712}
   - {fileID: 916263330}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1667163178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1667163179}
+  m_Layer: 0
+  m_Name: LaserMuzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1667163179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667163178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.09, y: -8.74, z: -14.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 839364412}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1692800007
 PrefabInstance:

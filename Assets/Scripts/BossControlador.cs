@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossControlador : MonoBehaviour
 {
     public int life;
-    //public GameObject LaserPrefab;
+    
     public Transform LaserMuzzle;
 
     private Slider HPSlider;
