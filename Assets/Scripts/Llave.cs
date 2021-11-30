@@ -24,6 +24,7 @@ public class Llave : MonoBehaviour
         else if (bloqueado== false)
         {
             pase.SetActive(true);
+            
         }
 
         
