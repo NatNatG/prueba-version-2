@@ -616,3 +616,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 490.961854 seconds.
+  path: Assets/FuentesTexto/Candy Crush.ttf
+  artifactKey: Guid(8a14adec328269845a16fc334f109bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FuentesTexto/Candy Crush.ttf using Guid(8a14adec328269845a16fc334f109bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62953990badfd34215e0322000e77949') in 0.553669 seconds 
+  Import took 0.575539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/FuentesTexto/Candy Shop Black Personal Use.ttf
+  artifactKey: Guid(4ef8e72b955984f41b51d7ee308d33ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FuentesTexto/Candy Shop Black Personal Use.ttf using Guid(4ef8e72b955984f41b51d7ee308d33ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0002d8f44cfd8aa37f6799c0f8a51a84') in 0.048092 seconds 
+  Import took 0.053364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/FuentesTexto/Candy Shop Contour Personal Use.ttf
+  artifactKey: Guid(7b1d66c37cf067646b5153e325fddf58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FuentesTexto/Candy Shop Contour Personal Use.ttf using Guid(7b1d66c37cf067646b5153e325fddf58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59693a77d6dfd4d366eb0be6f195497a') in 0.101893 seconds 
+  Import took 0.107598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/FuentesTexto/Candy Shop Personal Use.ttf
+  artifactKey: Guid(5b03c8a423673154f8c12bdc64f0133b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FuentesTexto/Candy Shop Personal Use.ttf using Guid(5b03c8a423673154f8c12bdc64f0133b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f5714cbb756ff27d6267c3070c142d') in 0.101894 seconds 
+  Import took 0.106975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/FuentesTexto/CandyJelly.otf
+  artifactKey: Guid(e74b88e78ca663945925a2829f1013e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FuentesTexto/CandyJelly.otf using Guid(e74b88e78ca663945925a2829f1013e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7946dcdbc8f0bc7a289e1c27f120fb') in 0.063211 seconds 
+  Import took 0.070027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/FuentesTexto/CANDY___.otf
+  artifactKey: Guid(7ec607ef8e1767048827ddaeccebb413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FuentesTexto/CANDY___.otf using Guid(7ec607ef8e1767048827ddaeccebb413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a69cdb22662fee6ad9c57ae2453cf9') in 0.109032 seconds 
+  Import took 0.126999 seconds .
+
