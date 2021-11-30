@@ -158,6 +158,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  score: {fileID: 0}
   enemyMuzzle: {fileID: 0}
-  puntaje: 0
