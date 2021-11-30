@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ec607ef8e1767048827ddaeccebb413
+guid: ce0f4a489694486449dac2b6c94d65e0
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - CANDY INC.
+  - Candy Butterfly
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
