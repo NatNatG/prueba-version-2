@@ -77,7 +77,7 @@ public class control : MonoBehaviour
 
         }
 
-        if (other.CompareTag("BossSpecial"))
+        if (other.CompareTag("enemy"))
         {
 
             hitpoints -= 3;
