@@ -58,9 +58,13 @@ public class GameManager : MonoBehaviour
     {
         
         score = GameObject.Find("score").GetComponent<Text>();
-        
-       
-        if(gameover == true)
+
+        if (final == null)
+        {
+            final = GameObject.Find("final1");
+        }
+
+        if (gameover == true)
         {
             
             Time.timeScale = 0f;
@@ -69,6 +73,7 @@ public class GameManager : MonoBehaviour
             oculto = false;
             
         }
+        
        
 
         if (oculto == true)
@@ -103,5 +108,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    public void DesactivarGameOver()
+    {
+        Time.timeScale = 1f;
+        AudioManager.instancia.PlayMusic(0, true);
+        LockCursor(true);
+        oculto = true;
+
+        gameover = false;
+        Debug.Log("DESACTIVATE");
+    }
 }

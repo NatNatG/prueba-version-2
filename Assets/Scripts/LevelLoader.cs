@@ -16,17 +16,17 @@ public class LevelLoader : MonoBehaviour
     private void Awake()
     {
         if (instancia == null)
-        { 
+        {
             instancia = this;
             DontDestroyOnLoad(gameObject);
         }
-        /*else
+        else
         {
             Destroy(gameObject);
-        }*/
 
-      
 
+
+        }
     }
 
     public GameObject loadingScreen;
@@ -37,6 +37,8 @@ public class LevelLoader : MonoBehaviour
     {
         
         StartCoroutine(LoadAsynchronously(sceneIndex));
+
+        
         
     }
 
@@ -56,5 +58,7 @@ public class LevelLoader : MonoBehaviour
 
             yield return null;
         }
+
+        GameObject.Find("***GameManager***").GetComponent<GameManager>().DesactivarGameOver();
     }
 }
