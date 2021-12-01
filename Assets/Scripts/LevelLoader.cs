@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LevelLoader : MonoBehaviour
 {
     public static LevelLoader instancia;
-      public static LevelLoader GetInstanciaLevel()
+    public static LevelLoader GetInstanciaLevel()
     {
         return instancia;
 
@@ -32,22 +32,39 @@ public class LevelLoader : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
+    public bool gameover = false;
 
-    public void LoadLevel(int sceneIndex)
+    /*private void Update()
     {
-        
-        StartCoroutine(LoadAsynchronously(sceneIndex));
-
-        
-        
+        ChecarGameOver();
+        LoadLevel(1);
     }
+    public void ChecarGameOver()
+    {
+        if(gameover == false)
+        {
+            
+
+            
+        }
+    }*/
+
+     public void LoadLevel(int sceneIndex)
+     {
+
+       StartCoroutine(LoadAsynchronously(sceneIndex));
+
+     }
 
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
         Time.timeScale = 1f;
+
+
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
         loadingScreen.SetActive(true);
+
 
         while (!operation.isDone)
         {
@@ -56,9 +73,16 @@ public class LevelLoader : MonoBehaviour
             slider.value = progress;
             progressText.text = progress * 100f + "%";
 
+
             yield return null;
+
+
+            //GameObject.Find("***GameManager***").GetComponent<GameManager>().DesactivarGameOver();
+
+
         }
 
-        GameObject.Find("***GameManager***").GetComponent<GameManager>().DesactivarGameOver();
+        //GameObject.Find("***GameManager***").GetComponent<GameManager>().DesactivarGameOver();
+
     }
 }

@@ -155,6 +155,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 544714094}
   slider: {fileID: 544714093}
   progressText: {fileID: 544714092}
+  gameover: 0
 --- !u!4 &133712735
 Transform:
   m_ObjectHideFlags: 0
@@ -318,7 +319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 2
+  m_Text: Controles
 --- !u!222 &263032858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -467,7 +468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09eca9dfad2958e4087248955c4291dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c030c2a3229fb44e86ea33215f59290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -684,7 +685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 1
+  m_Text: Jugar
 --- !u!222 &799579774
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -853,7 +854,7 @@ GameObject:
   - component: {fileID: 992210344}
   - component: {fileID: 992210343}
   m_Layer: 5
-  m_Name: Nivel3
+  m_Name: Creditos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -942,7 +943,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1169,7 +1170,7 @@ GameObject:
   - component: {fileID: 1285070444}
   - component: {fileID: 1285070443}
   m_Layer: 5
-  m_Name: Jugar
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1227,9 +1228,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Jugar
-
-'
+  m_Text: MENU
 --- !u!222 &1285070444
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1308,7 +1307,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 3
+  m_Text: Creditos
 --- !u!222 &1325457165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1329,9 +1328,8 @@ GameObject:
   - component: {fileID: 1604366052}
   - component: {fileID: 1604366051}
   - component: {fileID: 1604366050}
-  - component: {fileID: 1604366049}
   m_Layer: 5
-  m_Name: Nivel1
+  m_Name: Jugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,18 +1355,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0, y: 31}
   m_SizeDelta: {x: 113.7166, y: 81.3543}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1604366049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604366047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aba813ad68f92b246b82af8cdc94ae86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1604366050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,7 +1406,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1570,7 +1556,7 @@ GameObject:
   - component: {fileID: 1839271645}
   - component: {fileID: 1839271644}
   m_Layer: 5
-  m_Name: Nivel2
+  m_Name: Controles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1659,7 +1645,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

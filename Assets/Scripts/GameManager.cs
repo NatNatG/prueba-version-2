@@ -16,9 +16,9 @@ public class GameManager : MonoBehaviour
         if (instancia == null)
             instancia = this;
 
-        else if (instancia != this)
-            Destroy(gameObject);
-
+        else Destroy(gameObject);
+//if (instancia != this)
+            
         DontDestroyOnLoad(gameObject);
 
     }
@@ -49,8 +49,11 @@ public class GameManager : MonoBehaviour
         final = GameObject.Find("final1");
         AudioManager.instancia.PlayMusic(0, true);
 
-        gameover = false;
+        //gameover = false;
+
+        DesactivarGameOver();
         
+
     }
 
     // Update is called once per frame
@@ -71,8 +74,11 @@ public class GameManager : MonoBehaviour
             AudioManager.instancia.PlayMusic(0, false);
             LockCursor(false);
             oculto = false;
-            
+            //LevelLoader.GetInstanciaLevel();
+
         }
+        
+
         
        
 
@@ -116,6 +122,7 @@ public class GameManager : MonoBehaviour
         oculto = true;
 
         gameover = false;
-        Debug.Log("DESACTIVATE");
+     
+        //Debug.Log("DESACTIVATE");
     }
 }
