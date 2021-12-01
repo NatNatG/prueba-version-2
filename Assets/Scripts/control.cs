@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class control : MonoBehaviour
 {
+    private GameMaster gm;
+
     public float velocidad = 3.0f;
     public float gravedad = 9.81f;
     public int hitpoints;
@@ -19,9 +22,13 @@ public class control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         mCharacterController = GetComponent<CharacterController>();
         vida = GameObject.Find("Vida").GetComponent<Text>();
         vida.text = "Vida:" + hitpoints.ToString();
+
+        
     }
 
     // Update is called once per frame
@@ -48,6 +55,8 @@ public class control : MonoBehaviour
         }
 
         mCharacterController.Move(movimiento);
+
+       
     }
 
     private bool Saltar()
