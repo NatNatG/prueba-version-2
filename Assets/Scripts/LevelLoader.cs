@@ -1,22 +1,48 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
+    public static LevelLoader instancia;
+      public static LevelLoader GetInstanciaLevel()
+    {
+        return instancia;
+
+    }
+
+    private void Awake()
+    {
+        if (instancia == null)
+        { 
+            instancia = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        /*else
+        {
+            Destroy(gameObject);
+        }*/
+
+      
+
+    }
+
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
 
     public void LoadLevel(int sceneIndex)
     {
+        
         StartCoroutine(LoadAsynchronously(sceneIndex));
-
+        
     }
 
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
+        Time.timeScale = 1f;
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
         loadingScreen.SetActive(true);

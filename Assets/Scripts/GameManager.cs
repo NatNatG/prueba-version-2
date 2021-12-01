@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instancia;
@@ -25,16 +26,19 @@ public class GameManager : MonoBehaviour
     public Text score;
     public GameObject final;
     private bool oculto = true;
+
     public void addScore(int marcador)
     {
         puntaje += marcador;
         score.text = "score: " + puntaje.ToString();
     }
+    
     public bool gameover;
 
     public void detener()
     {
         gameover = true;
+       
 
     }
 
@@ -44,6 +48,8 @@ public class GameManager : MonoBehaviour
     {
         final = GameObject.Find("final1");
         AudioManager.instancia.PlayMusic(0, true);
+
+        gameover = false;
         
     }
 
@@ -63,6 +69,7 @@ public class GameManager : MonoBehaviour
             oculto = false;
             
         }
+       
 
         if (oculto == true)
         {
@@ -72,9 +79,10 @@ public class GameManager : MonoBehaviour
         else if (oculto == false)
         {
             final.SetActive(true);
-            
         }
+
         
+
     }
 
 
