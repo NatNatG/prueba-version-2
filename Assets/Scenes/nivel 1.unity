@@ -1049,6 +1049,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7593103316150003126, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1344967288}
+    - target: {fileID: 7593103316150003126, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
 --- !u!1 &1008273777
