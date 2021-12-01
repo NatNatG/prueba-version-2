@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
-    public static LevelLoader instancia;
+    /*public static LevelLoader instancia;
     public static LevelLoader GetInstanciaLevel()
     {
         return instancia;
@@ -27,7 +27,7 @@ public class LevelLoader : MonoBehaviour
 
 
         }
-    }
+    }*/
 
     public GameObject loadingScreen;
     public Slider slider;

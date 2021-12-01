@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
             instancia = this;
 
         else Destroy(gameObject);
-//if (instancia != this)
+        if (instancia != this)
             
         DontDestroyOnLoad(gameObject);
 

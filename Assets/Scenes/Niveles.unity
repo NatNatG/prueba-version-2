@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &133712734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 544714094}
   slider: {fileID: 544714093}
   progressText: {fileID: 544714092}
+  gameover: 0
 --- !u!4 &133712735
 Transform:
   m_ObjectHideFlags: 0
@@ -789,9 +790,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 133712734}
-        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 943878162}
+        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_MethodName: CambiarAEscena
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -935,9 +936,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 133712734}
-        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 992210343}
+        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_MethodName: CambiarAEscena
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1413,9 +1414,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 133712734}
-        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 1604366049}
+        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_MethodName: CambiarAEscena
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1652,9 +1653,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 133712734}
-        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 1839271644}
+        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_MethodName: CambiarAEscena
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

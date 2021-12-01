@@ -959,30 +959,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 434969361, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 434969361, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2079443229, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2079443229, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2079443229, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4724511977467637555, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1344967288}
     - target: {fileID: 7593103315750573800, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1070,14 +1046,6 @@ PrefabInstance:
     - target: {fileID: 7593103315750573804, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593103316150003126, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1344967288}
-    - target: {fileID: 7593103316150003126, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35f456f40c6920f448bbdf9537b57107, type: 3}
@@ -1290,7 +1258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1344967288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,6 +1274,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 1586914457}
   slider: {fileID: 385683460}
   progressText: {fileID: 2185937}
+  gameover: 0
 --- !u!4 &1344967289
 Transform:
   m_ObjectHideFlags: 0

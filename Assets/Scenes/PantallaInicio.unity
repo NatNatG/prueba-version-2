@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &169526112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 1639800810}
   slider: {fileID: 1033482997}
   progressText: {fileID: 580172650}
+  gameover: 0
 --- !u!4 &169526113
 Transform:
   m_ObjectHideFlags: 0
@@ -701,6 +702,7 @@ GameObject:
   - component: {fileID: 1618563137}
   - component: {fileID: 1618563136}
   - component: {fileID: 1618563135}
+  - component: {fileID: 1618563138}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -772,9 +774,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 169526112}
-        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 1618563138}
+        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_MethodName: CambiarAEscena
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -822,6 +824,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618563133}
   m_CullTransparentMesh: 1
+--- !u!114 &1618563138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618563133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba813ad68f92b246b82af8cdc94ae86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1639800810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 949628723274036708, guid: f6158bd81a499f84da9048cff709c610, type: 3}
