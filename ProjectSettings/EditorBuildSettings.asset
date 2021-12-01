@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PantallaInicio.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/menu ver 2.unity
+    guid: 63da1bde9ca33f844a447b9238f05b1f
+  - enabled: 0
     path: Assets/Scenes/Menu principal.unity
     guid: 3d3c363336a8b6048affd2833d616159
   - enabled: 1
@@ -18,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/nivel 1.unity
     guid: bbd641e6408ab8a4e8effc06f35e6132
   - enabled: 1
+    path: Assets/Scenes/nivel 2.0.unity
+    guid: e9694732584b9004e98fb371041a6aaf
+  - enabled: 0
     path: Assets/Scenes/nivel 2.unity
     guid: 836cdb3e7be93f949bddb4498043160a
   - enabled: 1

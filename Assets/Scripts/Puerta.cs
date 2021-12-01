@@ -25,6 +25,8 @@ public class Puerta : MonoBehaviour
         else if (cerrado == false)
         {
             Tsalida.SetActive(true);
+            GameManager.GetInstancia().detener();
+           //LevelLoader.GetInstanciaLevel();
         }
 
     }

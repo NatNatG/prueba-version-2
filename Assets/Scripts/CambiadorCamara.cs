@@ -6,6 +6,8 @@ public class CambiadorCamara : MonoBehaviour
 {
     public GameObject camara1;
     public GameObject camara2;
+    public GameObject disenho1;
+    public GameObject disenho2;
     public bool cam = true ;
     public  bool cam1 = false; 
     // Start is called before the first frame update
@@ -22,13 +24,16 @@ public class CambiadorCamara : MonoBehaviour
         {
             camara1.SetActive (false);
             camara2.SetActive  (true);
+            disenho1.SetActive(false);
+            disenho2.SetActive(true);
             
         }
         if (cam1 == true)
         {
             camara1.SetActive (true);
             camara2.SetActive (false);
-            
+            disenho1.SetActive(true);
+            disenho2.SetActive(false);
         }
 
         if(Input.GetKeyDown("l"))

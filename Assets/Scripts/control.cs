@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class control : MonoBehaviour
 {
     public float velocidad = 3.0f;
     public float gravedad = 9.81f;
-
+    public int hitpoints;
+    private Text vida;
     public float limiteSalto;
     public float cantidadSalto;
     public float deltaSalto;
@@ -19,6 +20,8 @@ public class control : MonoBehaviour
     void Start()
     {
         mCharacterController = GetComponent<CharacterController>();
+        vida = GameObject.Find("Vida").GetComponent<Text>();
+        vida.text = "Vida:" + hitpoints.ToString();
     }
 
     // Update is called once per frame
@@ -57,5 +60,36 @@ public class control : MonoBehaviour
         }
         else
             return false;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.tag.Equals("EnemyLaser"))
+        {
+            hitpoints--;
+
+            vida.text = "Vida:" + hitpoints.ToString();
+
+            Destroy(other.gameObject);
+
+
+           
+
+        }
+
+        if (other.CompareTag("enemy"))
+        {
+
+            hitpoints -= 3;
+
+            vida.text = "Vida:" + hitpoints.ToString();
+
+           
+        }
+        if (other.CompareTag("Bonus"))
+        {
+            hitpoints += 1;
+            vida.text = "Vida:" + hitpoints.ToString();
+        }
     }
 }
